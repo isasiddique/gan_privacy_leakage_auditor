@@ -1,0 +1,28 @@
+[
+    {
+        "privacySnapshotIdentifier": "PRIV-00001",
+        "cryptographicForensicsTelemetry": {
+            "evaluatedPredictionConfidence": 0.9591,
+            "observedTrainingDataEntropy": 2.7058,
+            "calculatedLeakageProbability": 0.8468
+        },
+        "generativeModelGovernance": {
+            "privacyFidelityStatus": "CRITICAL_MEMORIZATION_LEAK_HAZARD",
+            "ColossusAgentActionDirective": "TRIGGER_DYNAMIC_DIFFERENTIAL_PRIVACY_NOISE",
+            "pipelineResponseStatusCode": 422
+        }
+    },
+    {
+        "privacySnapshotIdentifier": "PRIV-00002",
+        "cryptographicForensicsTelemetry": {
+            "evaluatedPredictionConfidence": 0.9012,
+            "observedTrainingDataEntropy": 0.918,
+            "calculatedLeakageProbability": 0.5176
+        },
+        "generativeModelGovernance": {
+            "privacyFidelityStatus": "DATA_PRIVACY_SECURE",
+            "ColossusAgentActionDirective": "MAINTAIN_BASELINE_PRIVACY_BUDGET",
+            "pipelineResponseStatusCode": 200
+        }
+    }
+]
